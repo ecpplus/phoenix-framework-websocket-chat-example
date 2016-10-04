@@ -37,7 +37,12 @@ defmodule Chat.Mixfile do
      {:phoenix_html, "~> 2.6"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:cf, "~> 0.2.1", override: true},
+     {:erlware_commons, github: "erlware/erlware_commons", override: true},
+     {:exrm, "~> 1.0"},
+     {:phoenix_haml, git: "https://github.com/pinx/phoenix_haml.git"},
+   ]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.

@@ -13,7 +13,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :chat, Chat.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [host: "example.com", port: 80],
+  url: [host: "chat.ecpplus.net", port: 443],
   cache_static_manifest: "priv/static/manifest.json"
 
 # Do not print debug messages in production
@@ -53,7 +53,7 @@ config :logger, level: :info
 # Alternatively, you can configure exactly which server to
 # start per endpoint:
 #
-#     config :chat, Chat.Endpoint, server: true
+config :chat, Chat.Endpoint, server: true
 #
 
 # Finally import the config/prod.secret.exs

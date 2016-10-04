@@ -17,7 +17,13 @@ defmodule Chat.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    resources "/rooms", RoomController, only: [:create, :show]
   end
+
+  # socket '/ws', Chat do
+    # channel "rooms:*", RoomChannel
+    # # channel "users:*", UsersChannel
+  # end
 
   # Other scopes may use custom stacks.
   # scope "/api", Chat do

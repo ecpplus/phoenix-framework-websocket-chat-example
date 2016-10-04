@@ -38,6 +38,6 @@ config :chat, Chat.Repo,
   adapter: Ecto.Adapters.MySQL,
   username: "root",
   password: "",
-  database: "chat_dev",
+  database: "chat_sample_dev",
   hostname: "localhost",
   pool_size: 10
